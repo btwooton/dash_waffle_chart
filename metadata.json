@@ -124,6 +124,17 @@
         },
         "required": false,
         "description": ""
+      },
+      "boxConversionFactor": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "",
+        "defaultValue": {
+          "value": "100",
+          "computed": false
+        }
       }
     }
   }

@@ -13,6 +13,8 @@ Keyword arguments:
 
 - barHeightName (string; optional)
 
+- boxConversionFactor (number; default 100)
+
 - colors (list of strings; default ['#FF8E79', '#FF6B5B', '#FF4941', '#DB1D25'])
 
 - data (list of boolean | number | string | dict | lists; required)
@@ -41,10 +43,10 @@ Keyword arguments:
     _namespace = 'dash_waffle_chart'
     _type = 'DashWaffleChart'
     @_explicitize_args
-    def __init__(self, id=Component.REQUIRED, width=Component.UNDEFINED, data=Component.REQUIRED, valueName=Component.REQUIRED, barHeightName=Component.UNDEFINED, groupName=Component.REQUIRED, icon=Component.UNDEFINED, colors=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
+    def __init__(self, id=Component.REQUIRED, width=Component.UNDEFINED, data=Component.REQUIRED, valueName=Component.REQUIRED, barHeightName=Component.UNDEFINED, groupName=Component.REQUIRED, icon=Component.UNDEFINED, colors=Component.UNDEFINED, style=Component.UNDEFINED, boxConversionFactor=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'barHeightName', 'boxConversionFactor', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
+        self.available_properties = ['id', 'barHeightName', 'boxConversionFactor', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
