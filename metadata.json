@@ -4,6 +4,13 @@
     "displayName": "WaffleChart",
     "methods": [
       {
+        "name": "mergeStyles",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
         "name": "initializeWaffleChart",
         "docblock": null,
         "modifiers": [],
@@ -77,7 +84,7 @@
       },
       "icon": {
         "type": {
-          "name": "bool"
+          "name": "string"
         },
         "required": false,
         "description": "",
@@ -99,6 +106,35 @@
           "value": "['#FF8E79', '#FF6B5B', '#FF4941', '#DB1D25']",
           "computed": false
         }
+      },
+      "style": {
+        "type": {
+          "name": "shape",
+          "value": {
+            "faceColor": {
+              "name": "string",
+              "required": false
+            },
+            "barColor": {
+              "name": "string",
+              "required": false
+            },
+            "barFillColor": {
+              "name": "string",
+              "required": false
+            },
+            "labelColor": {
+              "name": "string",
+              "required": false
+            },
+            "buttonColor": {
+              "name": "string",
+              "required": false
+            }
+          }
+        },
+        "required": false,
+        "description": ""
       }
     }
   }

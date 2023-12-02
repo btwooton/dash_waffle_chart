@@ -19,7 +19,21 @@ Keyword arguments:
 
 - groupName (string; required)
 
-- icon (boolean; default False)
+- icon (string; default False)
+
+- style (dict; optional)
+
+    `style` is a dict with keys:
+
+    - barColor (string; optional)
+
+    - barFillColor (string; optional)
+
+    - buttonColor (string; optional)
+
+    - faceColor (string; optional)
+
+    - labelColor (string; optional)
 
 - valueName (string; required)
 
@@ -29,10 +43,10 @@ Keyword arguments:
     _namespace = 'dash_waffle_chart'
     _type = 'DashWaffleChart'
     @_explicitize_args
-    def __init__(self, id=Component.REQUIRED, width=Component.UNDEFINED, data=Component.REQUIRED, valueName=Component.REQUIRED, barHeightName=Component.UNDEFINED, groupName=Component.REQUIRED, icon=Component.UNDEFINED, colors=Component.UNDEFINED, **kwargs):
-        self._prop_names = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'valueName', 'width']
+    def __init__(self, id=Component.REQUIRED, width=Component.UNDEFINED, data=Component.REQUIRED, valueName=Component.REQUIRED, barHeightName=Component.UNDEFINED, groupName=Component.REQUIRED, icon=Component.UNDEFINED, colors=Component.UNDEFINED, style=Component.UNDEFINED, **kwargs):
+        self._prop_names = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'valueName', 'width']
+        self.available_properties = ['id', 'barHeightName', 'colors', 'data', 'groupName', 'icon', 'style', 'valueName', 'width']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
