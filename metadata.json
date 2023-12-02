@@ -23,13 +23,6 @@
         "modifiers": [],
         "params": [],
         "returns": null
-      },
-      {
-        "name": "reverseAnimation",
-        "docblock": null,
-        "modifiers": [],
-        "params": [],
-        "returns": null
       }
     ],
     "props": {
@@ -124,10 +117,6 @@
               "required": false
             },
             "labelColor": {
-              "name": "string",
-              "required": false
-            },
-            "buttonColor": {
               "name": "string",
               "required": false
             }

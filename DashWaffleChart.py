@@ -29,8 +29,6 @@ Keyword arguments:
 
     - barFillColor (string; optional)
 
-    - buttonColor (string; optional)
-
     - faceColor (string; optional)
 
     - labelColor (string; optional)
